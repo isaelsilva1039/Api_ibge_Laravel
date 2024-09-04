@@ -1,4 +1,8 @@
 
+
+
+
+
 # Guia Completo: Criando e Executando uma API com Laravel e Docker
 
 Este guia descreve o processo de criação e execução de uma API de municípios com **Laravel** utilizando **Docker**, e também explica a **Arquitetura de 3 Camadas** que usamos.
@@ -93,6 +97,23 @@ Na nossa implementação, usamos a **Arquitetura de 3 Camadas** para organizar o
        }
    }
    ```
+
+---
+
+# Explicação da Arquitetura de 3 Camadas
+
+A **Arquitetura de 3 Camadas** é uma prática comum no desenvolvimento de software que organiza a aplicação em três camadas distintas, cada uma com sua própria responsabilidade. Isso facilita a manutenção, escalabilidade e a reutilização de código.
+
+## Camadas
+
+### 1. Camada de Apresentação (Controller)
+
+A camada de apresentação é responsável por receber as requisições HTTP dos usuários, interagir com a camada de negócio e devolver a resposta para o cliente. No Laravel, essa camada é representada pelos **Controllers**.
+
+#### Responsabilidades:
+- Receber requisições HTTP e parâmetros.
+- Passar as requisições e os dados para a camada de negócio.
+- Devolver a resposta para o cliente.
 
 ---
 
